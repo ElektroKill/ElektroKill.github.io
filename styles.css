@@ -1,0 +1,34 @@
+@charset "utf-8";
+html {
+	font-family: "Consolas", monospace;
+	color: rgb(102, 255, 51);
+	background-color: black;
+	font-size: 18px;
+}
+#Title {
+	font-size: 38px;
+	text-align: center;
+	font-family: "Consolas", monospace;
+	text-decoration: underline;
+}
+#footer {
+	text-align: center;
+}
+.bordered {
+	border: 2px solid rgb(102, 255, 51);
+    padding: 18px;
+	font-size: 18px;
+}
+ul > li {
+	list-style: lower-greek;
+}
+a {
+	color: rgb(102, 255, 51);
+}
+p {
+	font-size: 12px;
+	padding: 0px;
+}
+#none > li{
+	list-style: none;
+}
