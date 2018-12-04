@@ -4,17 +4,28 @@ c.height = window.innerHeight;
 c.width = window.innerWidth;
 var matrix = "`1234567890-=!@#$%^&*()_+qwertyuiop[]asdfghjkl;'zxcvbnm,./QWERTYUIOPASDFGHJKLZXCVBNM<>?;'\"\\|~{}";
 matrix = matrix.split("");
-var font_size = 10;
+var font_size = 13;
 var columns = c.width/font_size; 
 var drops = [];
 for(var x = 0; x < columns; x++)
 	drops[x] = 1; 
+function onBodyResize()
+{
+	ctx = c.getContext("2d");
+	c.height = window.innerHeight;
+	c.width = window.innerWidth;
+	columns = c.width/font_size;
+	drops = [];
+	for(var x = 0; x < columns; x++)
+		drops[x] = 1; 
+}
 function draw()
 {
+	document.getElementsByTagName("BODY")[0].onresize = function() { onBodyResize(); };
 	ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
 	ctx.fillRect(0, 0, c.width, c.height);
 	ctx.fillStyle = "#005800"; 
-	ctx.font = font_size + "px arial";
+	ctx.font = font_size + "px Consolas";
 	for(var i = 0; i < drops.length; i++)
 	{
 		var text = matrix[Math.floor(Math.random()*matrix.length)];
