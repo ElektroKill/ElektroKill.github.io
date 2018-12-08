@@ -25,7 +25,7 @@ function draw()
 	ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
 	ctx.fillRect(0, 0, c.width, c.height);
 	ctx.fillStyle = "#005800"; 
-	ctx.font = font_size + "px Consolas";
+	ctx.font = font_size + "px Consolas, Menlo, Monaco, Lucida Console, monospace, serif";
 	for(var i = 0; i < drops.length; i++)
 	{
 		var text = matrix[Math.floor(Math.random()*matrix.length)];
