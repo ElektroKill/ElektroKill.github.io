@@ -1,31 +1,11 @@
 html {
-	color: rgb(241, 241, 241);
-}
-
-ul > li {
-	list-style: armenian;
-	padding: 1px;
+	color: rgb(83, 212, 32);
+	font-family: Consolas, Lucida Console;
+	text-align: center;
 }
 
 a {
-	color: rgb(241, 241, 241);
-}
-
-#none > li{
-	list-style: none;
-}
-
-#Title {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  letter-spacing: 15px;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgb(241, 241, 241);
-  margin: 0px;
-  padding: 0px;
-  text-shadow: -2px 0 0 rgba(255, 0, 0, .7),2px 0 0 rgba(0, 255, 255, .7);
+	color: rgb(83, 212, 32);
 }
 
 #particles-js {
@@ -42,10 +22,6 @@ a {
   margin: 0;
 }
 
-#footer {
-	text-align: center;
-}
-
 .particles-js-canvas-el {
 	display: block;
 	vertical-align: bottom;
@@ -53,7 +29,9 @@ a {
 }
 
 .bordered {
-	border: 2px solid rgb(241, 241, 241);
+	border: 2px solid rgb(83, 212, 32);
     padding: 20px;
 	font-size: 18px;
+	margin-left: 250px;
+    margin-right: 250px;
 }
