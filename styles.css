@@ -30,8 +30,7 @@ a {
 
 .bordered {
 	border: 2px solid rgb(83, 212, 32);
-    padding: 20px;
 	font-size: 18px;
-	margin-left: 250px;
-    margin-right: 250px;
+	width: 70%;
+	margin: 0 auto;
 }
