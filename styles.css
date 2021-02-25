@@ -1,11 +1,13 @@
 html {
 	color: rgb(83, 212, 32);
-	font-family: Consolas, Lucida Console;
+	font-family: JetBrains Mono, Consolas, Lucida Console;
 	text-align: center;
+	pointer-events: none;
 }
 
 a {
 	color: rgb(83, 212, 32);
+	pointer-events: auto;
 }
 
 #particles-js {
@@ -26,6 +28,7 @@ a {
 	display: block;
 	vertical-align: bottom;
 	width: 100%; height: 100%;
+	pointer-events: auto;
 }
 
 .bordered {
